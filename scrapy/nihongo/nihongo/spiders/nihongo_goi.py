@@ -24,17 +24,17 @@ class QuotesSpider(scrapy.Spider):
 	def saveFile(self,response):
 		
 		
-		goi = response.xpath('//div[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[1]/text()').extract()
+		goi_japanese = response.xpath('//div[@id="rt-mainbody"]/div/article/div/table/tbody/tr/td[1]/text()').extract()
+		goi_vietnamese = response.xpath('//div[@id="rt-mainbody"]/div/article/div/table/tbody/tr/td[5]/text()').extract()
 		#phatAm = response.xpath('//*[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[2]/center/a/@href').extract()
 		#linkPhatAm = "https://www.vnjpclub.com"+phatAm
-		hanTu = response.xpath('//*[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[3]/text()').extract()
-		amHan = response.xpath('//*[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[4]/text()').extract() 
-		nghia = response.xpath('//div[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[5]/text()').extract()
+		# hanTu = response.xpath('//*[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[3]/text()').extract()
+		# amHan = response.xpath('//*[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[4]/text()').extract()
+		# nghia = response.xpath('//div[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[5]/text()').extract()
 		item = NihongoItem()
-		goi1 = goi.encode("utf-8")
-		print(goi1)
+		dictionary = dict(zip(goi_japanese, goi_vietnamese))
+		print(dictionary)
 		#print(linkPhatAm)
-		print(hanTu)
-		print(amHan)
-		print(nghia)
-		
+		# print(hanTu)
+		# print(amHan)
+		# print(nghia)
