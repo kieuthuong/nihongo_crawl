@@ -22,19 +22,9 @@ class QuotesSpider(scrapy.Spider):
 			linkGoi1="https://www.vnjpclub.com"+linkGoi
 			yield scrapy.Request(linkGoi1, callback=self.saveFile)
 	def saveFile(self,response):
-		
-		
-		goi = response.xpath('//div[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[1]/text()').extract()
-		#phatAm = response.xpath('//*[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[2]/center/a/@href').extract()
-		#linkPhatAm = "https://www.vnjpclub.com"+phatAm
-		hanTu = response.xpath('//*[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[3]/text()').extract()
-		amHan = response.xpath('//*[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[4]/text()').extract() 
-		nghia = response.xpath('//div[@id="rt-mainbody"]/div/article/div/table/tbody/tr[1]/td[5]/text()').extract()
-		item = NihongoItem()
-		goi1 = goi.encode("utf-8")
-		print(goi1)
-		#print(linkPhatAm)
-		print(hanTu)
-		print(amHan)
-		print(nghia)
+		goi_japanese = response.xpath('//div[@id="rt-mainbody"]/div/article/div/table/tbody/tr/td[1]/text()').extract()
+		goi_vietnamese = response.xpath('//div[@id="rt-mainbody"]/div/article/div/table/tbody/tr/td[5]/text()').extract()
+		item = NihongoItem()	
+		dictionary = dict(zip(goi_japanese, goi_vietnamese))
+		print(dictionary)
 		
