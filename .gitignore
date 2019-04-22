@@ -1,0 +1,11 @@
+Doc1.docx
+Predicting Severity of Road Traffic Congestion using SW.pdf
+Producing Linked Data for Smart Cities the case of Catania.pdf
+RoadCongestionDianosisusingSW.pdf
+Smart Traffic Analytics in the Semantic Web with STAR-CITY.pdf
+Social Media Based Transportation Research.pdf
+/semantic web/*
+/semantic web
+/.idea
+/.idea/*
+*.pyc
