@@ -1,0 +1,646 @@
+@prefix : <http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34> .
+
+<http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34> rdf:type owl:Ontology ;
+                                                                          
+                                                                          owl:imports <http://www.semanticweb.org/admin/ontologies/2019/2/untitled-ontology-31> .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#congtyLQ
+
+:congtyLQ rdf:type owl:ObjectProperty ;
+          
+          rdfs:range <http://www.semanticweb.org/admin/ontologies/2019/2/untitled-ontology-31#Stock> ;
+          
+          rdfs:domain :CommonEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#congtyLQTH
+
+:congtyLQTH rdf:type owl:ObjectProperty ;
+            
+            rdfs:range <http://www.semanticweb.org/admin/ontologies/2019/2/untitled-ontology-31#Stock> ;
+            
+            rdfs:domain :DisasterEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#eventOfCompany
+
+:eventOfCompany rdf:type owl:ObjectProperty ;
+                
+                rdfs:range <http://www.semanticweb.org/admin/ontologies/2019/2/untitled-ontology-31#Stock> ;
+                
+                rdfs:domain :CompanyEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#eventOfSector
+
+:eventOfSector rdf:type owl:ObjectProperty ;
+               
+               rdfs:range <http://www.semanticweb.org/admin/ontologies/2019/2/untitled-ontology-31#Sector> ;
+               
+               rdfs:domain :SectorEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#eventOfStock
+
+:eventOfStock rdf:type owl:ObjectProperty ;
+              
+              rdfs:range <http://www.semanticweb.org/admin/ontologies/2019/2/untitled-ontology-31#Stock> ;
+              
+              rdfs:domain :StockEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#hasWarning
+
+:hasWarning rdf:type owl:ObjectProperty ;
+            
+            rdfs:domain :StockEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#nganhLQ
+
+:nganhLQ rdf:type owl:ObjectProperty ;
+         
+         rdfs:domain :CommonEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#nganhLQTH
+
+:nganhLQTH rdf:type owl:ObjectProperty ;
+           
+           rdfs:range <http://www.semanticweb.org/admin/ontologies/2019/2/untitled-ontology-31#Sector> ;
+           
+           rdfs:domain :DisasterEvent .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#LN_Ki
+
+:LN_Ki rdf:type owl:DatatypeProperty ;
+       
+       rdfs:domain :ProfitReport ;
+       
+       rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#chucvuBoNhiem
+
+:chucvuBoNhiem rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain :ChangeManagement ;
+               
+               rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#chucvuMienNhiem
+
+:chucvuMienNhiem rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:domain :ChangeManagement ;
+                 
+                 rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#chucvuNDT
+
+:chucvuNDT rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :StockExchange ;
+           
+           rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#chucvuNLQ
+
+:chucvuNLQ rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :StockExchange ;
+           
+           rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#cpDaGD
+
+:cpDaGD rdf:type owl:DatatypeProperty ;
+        
+        rdfs:domain :StockExchange ;
+        
+        rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#cpSauGD
+
+:cpSauGD rdf:type owl:DatatypeProperty ;
+         
+         rdfs:domain :StockExchange ;
+         
+         rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#cpTruocGD
+
+:cpTruocGD rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :StockExchange ;
+           
+           rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#denNgay
+
+:denNgay rdf:type owl:DatatypeProperty ;
+         
+         rdfs:domain :StockExchange ;
+         
+         rdfs:range xsd:dateTime .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#eventDate
+
+:eventDate rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :Event ;
+           
+           rdfs:range xsd:dateTime .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#eventSource
+
+:eventSource rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Event ;
+             
+             rdfs:range xsd:anyURI .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#eventStatus
+
+:eventStatus rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Event ;
+             
+             rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#giaTriCPThem
+
+:giaTriCPThem rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :StockMoreIssue ;
+              
+              rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#linhvucDV
+
+:linhvucDV rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :CompanyInvest ;
+           
+           rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#loaiCK
+
+:loaiCK rdf:type owl:DatatypeProperty ;
+        
+        rdfs:domain :StockMoreIssue ;
+        
+        rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#loaiGiaoDich
+
+:loaiGiaoDich rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :StockExchange ;
+              
+              rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#luongCPThem
+
+:luongCPThem rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :StockMoreIssue ;
+             
+             rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#luongTangGiam
+
+:luongTangGiam rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain :ProfitReport ;
+               
+               rdfs:range xsd:float .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#luongvonDV
+
+:luongvonDV rdf:type owl:DatatypeProperty ;
+            
+            rdfs:domain :CompanyInvest ;
+            
+            rdfs:range xsd:float .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#menhGiaCPThem
+
+:menhGiaCPThem rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain :StockMoreIssue ;
+               
+               rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#mua_ban
+
+:mua_ban rdf:type owl:DatatypeProperty ;
+         
+         rdfs:domain :StockExchange ;
+         
+         rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#mucdichGD
+
+:mucdichGD rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :StockExchange ;
+           
+           rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#ngayGDChinhThuc
+
+:ngayGDChinhThuc rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:domain :StockMoreIssue ;
+                 
+                 rdfs:range xsd:dateTime .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#ngayPhatHanh
+
+:ngayPhatHanh rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :StockMoreIssue ;
+              
+              rdfs:range xsd:dateTime .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#ngayTachGop
+
+:ngayTachGop rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :StockAdd_Split ;
+             
+             rdfs:range xsd:dateTime .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#ngayThayDoi
+
+:ngayThayDoi rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :ChangeManagement ;
+             
+             rdfs:range xsd:dateTime .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#nguoiBoNhiem
+
+:nguoiBoNhiem rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :ChangeManagement ;
+              
+              rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#nguoiMienNhiem
+
+:nguoiMienNhiem rdf:type owl:DatatypeProperty ;
+                
+                rdfs:domain :ChangeManagement ;
+                
+                rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#phuongthucGD
+
+:phuongthucGD rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :StockExchange ;
+              
+              rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#tach_gop
+
+:tach_gop rdf:type owl:DatatypeProperty ;
+          
+          rdfs:domain :StockAdd_Split ;
+          
+          rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#tenNDT
+
+:tenNDT rdf:type owl:DatatypeProperty ;
+        
+        rdfs:domain :StockExchange ;
+        
+        rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#tenNLQ
+
+:tenNLQ rdf:type owl:DatatypeProperty ;
+        
+        rdfs:domain :StockExchange ;
+        
+        rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#thoigianDT
+
+:thoigianDT rdf:type owl:DatatypeProperty ;
+            
+            rdfs:domain :CompanyInvest ;
+            
+            rdfs:range xsd:dateTime .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#tiLe
+
+:tiLe rdf:type owl:DatatypeProperty ;
+      
+      rdfs:domain :StockAdd_Split ;
+      
+      rdfs:range xsd:float .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#ttThayDoiDiemSo
+
+:ttThayDoiDiemSo rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:domain :StockEvent ;
+                 
+                 rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#tuNgay
+
+:tuNgay rdf:type owl:DatatypeProperty ;
+        
+        rdfs:domain :StockExchange ;
+        
+        rdfs:range xsd:dateTime .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#ChangeManagement
+
+:ChangeManagement rdf:type owl:Class ;
+                  
+                  rdfs:subClassOf :CompanyEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#CommonEvent
+
+:CommonEvent rdf:type owl:Class ;
+             
+             rdfs:subClassOf :Event .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#CompanyEvent
+
+:CompanyEvent rdf:type owl:Class ;
+              
+              rdfs:subClassOf :Event .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#CompanyInvest
+
+:CompanyInvest rdf:type owl:Class ;
+               
+               rdfs:subClassOf :CompanyEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#DisasterEvent
+
+:DisasterEvent rdf:type owl:Class ;
+               
+               rdfs:subClassOf :Event .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#Event
+
+:Event rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#InvestReport
+
+:InvestReport rdf:type owl:Class ;
+              
+              rdfs:subClassOf :CompanyEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#ProfitReport
+
+:ProfitReport rdf:type owl:Class ;
+              
+              rdfs:subClassOf :CompanyEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#SectorEvent
+
+:SectorEvent rdf:type owl:Class ;
+             
+             rdfs:subClassOf :Event .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#SectorInvest
+
+:SectorInvest rdf:type owl:Class ;
+              
+              rdfs:subClassOf :SectorEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#SectorProfit
+
+:SectorProfit rdf:type owl:Class ;
+              
+              rdfs:subClassOf :SectorEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#StockAdd_Split
+
+:StockAdd_Split rdf:type owl:Class ;
+                
+                rdfs:subClassOf :StockEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#StockEvent
+
+:StockEvent rdf:type owl:Class ;
+            
+            rdfs:subClassOf :Event .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#StockExchange
+
+:StockExchange rdf:type owl:Class ;
+               
+               rdfs:subClassOf :StockEvent .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#StockMoreIssue
+
+:StockMoreIssue rdf:type owl:Class ;
+                
+                rdfs:subClassOf :StockEvent .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#GD1
+
+:GD1 rdf:type owl:NamedIndividual ;
+     
+     :tuNgay "02/04/2008"^^xsd:dateTime ;
+     
+     :denNgay "02/05/2008"^^xsd:dateTime ;
+     
+     :cpDaGD 19000 ;
+     
+     :cpTruocGD 5056420 ;
+     
+     :cpSauGD 5075420 ;
+     
+     :chucvuNDT "Chu Tich HDQT"^^xsd:string ;
+     
+     :tenNDT "Nguyen Quang Tien"^^xsd:string ;
+     
+     :mucdichGD "tang ty le so huu"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/3/untitled-ontology-34#GD2
+
+:GD2 rdf:type owl:NamedIndividual ;
+     
+     :tuNgay "13/05/2008"^^xsd:dateTime ;
+     
+     :denNgay "13/06/2008"^^xsd:dateTime ;
+     
+     :cpTruocGD 15342 ;
+     
+     :cpSauGD 20342 ;
+     
+     :cpDaGD 5000 ;
+     
+     :tenNDT "Nguyen Van Khac"^^xsd:string ;
+     
+     :chucvuNDT "Uy vien Hoi dong quan tri - Pho Giam doc Cong ty"^^xsd:string .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

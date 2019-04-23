@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://xmlns.com/foaf/0.1/" uri="NhaKhoaHoc.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1553479063575" name="duplicate:http://localhost:8080/mydataset/" uri="NhaKhoaHoc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553479063575" name="duplicate:http://localhost:8080/mydataset/" uri="NhaKhoaHoc.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1553479063575" name="http://people.brunel.ac.uk/~csstnns/university.owl" uri="university.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553479063575" name="http://www.semanticweb.org/admin/ontologies/2019/2/untitled-ontology-20" uri="person.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553479063575" name="http://www.semanticweb.org/admin/ontologies/2019/2/untitled-ontology-29" uri="test.owl"/>
+    </group>
+</catalog>
