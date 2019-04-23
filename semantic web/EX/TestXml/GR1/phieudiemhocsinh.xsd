@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+  <xs:element name = "PhieuDiem" type="KPhieuDiem"/>
+
+  <xs:complexType name = "KPhieuDiem">
+    <xs:sequence>
+      <xs:element name = "SinhVien" type = "KSinhVien"/>
+      <xs:element name = "BangDiem" type = "KBangDiem"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name = "KieuSinhVien">
+    <xs:sequense>
+      <xs:element name = "HoTen" type = "xs:string"/>
+      <xs:element name = "Lop" type = "xs:string"/>
+      <xs:element name = "DiaChi" type = "xs:string"/>
+      <xs:element name = "GioiTinh">
+        <xs:simpleType>
+          <xs:restriction base = "xs:string"/>
+          <xs:pattern value = "Nam|Nu"/>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name = "NgaySinh" type = "xs:date"/>
+    </xs:sequense>
+  </xs:complexType>
+
+  <xs:complexType name = "KBangDiem">
+    <xs:element name = "MonHoc" type = "KMonHoc"/>
+  </xs:complexType>
+
+  <xs:complexType name = "KMonHoc">
+    <xs:sequense>
+      <xs:element name = "STT" type = "xs:integer"/>
+      <xs:element name = "TenMon" type = "xs:string"/>
+      <xs:element name = "DiemKy1" type = "KDiem"/>
+      <xs:element name = "DiemKy2" type = "KDiem"/>
+      <xs:element name = "DiemTB" type = "KDiem"/>
+    </xs:sequense>
+  </xs:complexType>
+
+  <xs:simpleType name = "KDiem">
+    <xs:restriction base = "xs:double"/>
+    <xs:minExclusive value = "0.0"/>
+    <xs:maxExclusive value = "10.0"/>
+  </xs:simpleType>
+</xs:schema>

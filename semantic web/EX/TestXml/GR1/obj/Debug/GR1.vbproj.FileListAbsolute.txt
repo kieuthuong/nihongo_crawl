@@ -1,0 +1,2 @@
+C:\Users\admin\Downloads\GR1\EX\TestXml\GR1\obj\Debug\GR1.vbprojAssemblyReference.cache
+C:\Users\admin\Downloads\GR1\EX\TestXml\GR1\obj\Debug\GR1.vbproj.CoreCompileInputs.cache

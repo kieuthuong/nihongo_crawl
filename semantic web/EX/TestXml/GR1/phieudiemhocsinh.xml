@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- if you use dtd-->
+<!DOCTYPE PhieuDiem SYSTEM "phieudiemhocsinh.dtd">
+<!-- end use dtd-->
+
+<!-- if you use schema-->
+<PhieuDiem xmlns = "http://www.w3school.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation = "phieudiemhocsinh.xsd">
+  <!-- end use chema-->
+
+  <PhieuDiem>
+    <SinhVien>
+      <HoTen>Nguyen Van Quan</HoTen>
+      <Lop>KTPMK10B</Lop>
+      <DiaChi>Bac Ninh</DiaChi>
+      <GioiTinh>Nam</GioiTinh>
+      <NgaySinh>31/12/1992</NgaySinh>
+    </SinhVien>
+
+    <BangDiem>
+      <MonHoc>
+        <STT>1</STT>
+        <TenMon>XML</TenMon>
+        <DienKy1>10</DienKy1>
+        <DienKy2>10</DienKy2>
+        <DienTB>10</DienTB>
+      </MonHoc>
+
+      <MonHoc>
+        <STT>2</STT>
+        <TenMon>Java</TenMon>
+        <DienKy1>10</DienKy1>
+        <DienKy2>10</DienKy2>
+        <DienTB>10</DienTB>
+      </MonHoc>
+    </BangDiem>
+  </PhieuDiem>
